@@ -1,0 +1,19 @@
+/* tablet & mobile */
+@media (max-width:  63.9375em) {
+    .header__navbar{
+        padding: 0 16px;
+    }
+}
+
+/* tablet */
+@media (min-width: 46.25em) and (max-width:  63.9375em) {
+    
+}
+
+/* mobile */
+@media screen and (max-width: 46.1875em) {
+    .navbar-list-mobile{
+        display: none;
+    }
+    
+}

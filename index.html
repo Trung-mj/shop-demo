@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop_Trung</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asstes/css/base.css">
+    <link rel="stylesheet" href="./asstes/css/main.css">
+    <link rel="stylesheet" href="./asstes/css/resposive.css">
+    <link rel="stylesheet" href="./asstes/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Festive&family=Great+Vibes&family=Lobster&family=Roboto:wght@300;400;500;700&family=Supermercado+One&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <!--Begin Header-->
+        <header class="header">
+                <nav class="header__navbar">
+                    <ul class="navbar-list">
+                        <span class="navbar-items--nopointer">
+                            <i class="items-icon  fas fa-phone-volume"></i>
+                            Phone:
+                        </span>  
+                        <li class="navbar-items">
+                            <a class="tel-phone" href="tel:+00 151515">+00 151515</a>
+                        </li>
+    
+                    </ul>
+                    <ul class="navbar-list  navbar-list-mobile">
+                        <span class="navbar-list__icon">
+                            <i class="items-icon  fas fa-search"></i>
+                        </span>
+                        <li class="navbar-items  ">
+                            Tìm kiếm
+                            <div class="search-write">
+                                <input type="text"  class="items-search-input"  placeholder="Tìm kiếm...">
+                                <i class="items-icon--search  fas fa-search"></i>
+                            </div>
+                        </li>
+                        <span class="navbar-list__icon">
+                            <i class="items-icon  far fa-user "></i>
+                        </span>
+                        <li class="navbar-items">
+                            Tài khoản
+                            <ul class="navbar-items__user">
+                                <li class="user__log-in">Đăng nhập</li>
+                                <li class="user__log-in">Đăng ký</li>
+                            </ul>
+                        </li>
+                        <span class="navbar-list__icon">
+                            <i class="items-icon  fas fa-shopping-cart"></i>
+                        </span>
+                        <li class="navbar-items">
+                            <span class="navbar-items__quantily">0</span>
+                            Giỏ hàng
+                            <div class="navbar-items__nocart">
+                                <div class="navbar-items__nocart-label">Không có sản phẩm nào</div>
+                            </div>
+
+                        </li>
+    
+                    </ul>
+
+
+                    <!-- nav mobile -->
+                    <div class="nav__mobile">
+                        <div class="nav__mobile-icon">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </nav>
+
+            
+        </header>
+        <div class="header-2">  
+            <div class="grid wide">
+                <div class="header-2__navbar">
+                    <ul class="header-2__list">
+                        <li class="header-2__items  header-2__items--clicked">Trang chủ</li>
+                        <li class="header-2__items">Giới thiệu</li>
+                        <li class="header-2__items">
+                            Sản phẩm
+                            <i class="header-2__items--down  fas fa-sort-down"></i>
+                            <ul class="header-2__items--product">
+                                <li class="header-2__items--product-list">
+                                    <a href="" class="header-2__items--product-list-link">Cà phê</a> 
+                                </li>
+                                <li class="header-2__items--product-list">
+                                    <a href="" class="header-2__items--product-list-link">Bánh ngọt</a> 
+                                </li>
+                                <li class="header-2__items--product-list">
+                                    <a href="" class="header-2__items--product-list-link">Smoothies</a> 
+                                </li>
+                                <li class="header-2__items--product-list">
+                                    <a href="" class="header-2__items--product-list-link">Trà hoa quả</a> 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <ul class="header-2__list">
+                        <li class="header-2__items">
+                            <img src="./asstes/img/img_logo/logo.png" alt="" class="header-2__items--logo">
+                        </li>
+                    </ul>
+    
+                    <ul class="header-2__list header-2__list-magin-right">
+                        <li class="header-2__items">Tin tức</li>
+                        <li class="header-2__items">Thực đơn</li>
+                        <li class="header-2__items">Liên hệ</li>
+                    </ul>
+                    
+                </div>                
+            </div>                 
+        </div>
+
+        <div class="slider">
+            <div class="mySlides" style="background-image: url(/asstes/slider/slider_img1.jpg)"></div>
+            <div class="mySlides" style="background-image: url(/asstes/slider/slider_img2.jpg)"></div>
+            <div class="mySlides" style="background-image: url(/asstes/slider/slider_img3.jpg)"></div>
+        </div>
+
+        <div class="container">
+            <div class="grid wide-m">
+                <div class="container__category">
+                    <div class="container__category-hl">
+                        <span class="container__category-logo">coffee shop</span>
+                        <h3 class="container__category-heading">MENU HÔM NAY</h3>
+                        <div class="container__category-list">
+                            <a href="" class="container__category-btn  selected">Cà phê</a>
+                            <a href="" class="container__category-btn">Bánh ngọt</a>
+                            <a href="" class="container__category-btn">Smoothies</a>
+                            <a href="" class="container__category-btn">Trà hoa quả</a>
+                        </div>
+                    </div>
+                   
+                    <ul class="container__product">
+                        <div class="row">
+                            <li class="container__items l-3">
+                               <div class="container__border">
+                                   <a href="" class="container__product-link">
+                                        <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                    </a>
+                                    <div class="container__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                               </div>
+                                <div class="container__product-content">
+                                    <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                    <span class="container__price">Giá:</span>
+                                    <span class="container__price-number">40.000đ </span>
+                                </div> 
+                            </li>
+                            <li class="container__items l-3">
+                                <div class="container__border">
+                                    <a href="" class="container__product-link">
+                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                     </a>
+                                     <div class="container__add-cart">
+                                         Thêm vào giỏ hàng
+                                     </div>
+                                </div>
+                                 <div class="container__product-content">
+                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                     <span class="container__price">Giá:</span>
+                                     <span class="container__price-number">40.000đ </span>
+                                 </div> 
+                             </li>
+                             <li class="container__items l-3">
+                                <div class="container__border">
+                                    <a href="" class="container__product-link">
+                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                     </a>
+                                     <div class="container__add-cart">
+                                         Thêm vào giỏ hàng
+                                     </div>
+                                </div>
+                                 <div class="container__product-content">
+                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                     <span class="container__price">Giá:</span>
+                                     <span class="container__price-number">40.000đ </span>
+                                 </div> 
+                             </li>
+                             <li class="container__items l-3">
+                                <div class="container__border">
+                                    <a href="" class="container__product-link">
+                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                     </a>
+                                     <div class="container__add-cart">
+                                         Thêm vào giỏ hàng
+                                     </div>
+                                </div>
+                                 <div class="container__product-content">
+                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                     <span class="container__price">Giá:</span>
+                                     <span class="container__price-number">40.000đ </span>
+                                 </div> 
+                             </li>
+                             <li class="container__items l-3">
+                                <div class="container__border">
+                                    <a href="" class="container__product-link">
+                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                     </a>
+                                     <div class="container__add-cart">
+                                         Thêm vào giỏ hàng
+                                     </div>
+                                </div>
+                                 <div class="container__product-content">
+                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                     <span class="container__price">Giá:</span>
+                                     <span class="container__price-number">40.000đ </span>
+                                 </div> 
+                             </li>
+                             <li class="container__items l-3">
+                                <div class="container__border">
+                                    <a href="" class="container__product-link">
+                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                     </a>
+                                     <div class="container__add-cart">
+                                         Thêm vào giỏ hàng
+                                     </div>
+                                </div>
+                                 <div class="container__product-content">
+                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                     <span class="container__price">Giá:</span>
+                                     <span class="container__price-number">40.000đ </span>
+                                 </div> 
+                             </li>
+                             <li class="container__items l-3">
+                                <div class="container__border">
+                                    <a href="" class="container__product-link">
+                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                     </a>
+                                     <div class="container__add-cart">
+                                         Thêm vào giỏ hàng
+                                     </div>
+                                </div>
+                                 <div class="container__product-content">
+                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                     <span class="container__price">Giá:</span>
+                                     <span class="container__price-number">40.000đ </span>
+                                 </div> 
+                             </li>
+                             <li class="container__items l-3">
+                                <div class="container__border">
+                                    <a href="" class="container__product-link">
+                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                     </a>
+                                     <div class="container__add-cart">
+                                         Thêm vào giỏ hàng
+                                     </div>
+                                </div>
+                                 <div class="container__product-content">
+                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                     <span class="container__price">Giá:</span>
+                                     <span class="container__price-number">40.000đ </span>
+                                 </div> 
+                             </li>
+                           
+                            
+                        </div>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="container__adv" style="background-image: url(/asstes/img/img_background/background_coffee.jpg)">
+                <div class="grid wide">
+                    <div class="adv__consider">
+                        <h3 class="adv__heading">TẠI SAO PHẢI CHỌN CHÚNG TÔI</h3>
+                        <P>Ngôi nhà Coffee không gian dành riêng cho những ai trót yêu say đắm hương vị cà phê tuyệt hảo.</P>
+                        <ul class="adv__list">
+                            <li class="adv__items">
+                                <span class="adv__icon">
+                                    <i class="  fas fa-dollar-sign"></i>
+                                </span>
+                                <div class="adv__items--content">
+                                    <h3 class="adv__items-heading">
+                                        Giá  cả phải chăng
+                                    </h3>
+                                    <p>Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng</p>
+                                </div>
+                            </li>
+                            <li class="adv__items">
+                                <span class="adv__icon">
+                                    <i class="  fas fa-mug-hot"></i>
+                                </span>
+                                <div class="adv__items--content">
+                                    <h3 class="adv__items-heading">
+                                        Hương vị tuyệt hảo
+                                    </h3>
+                                    <p>Những hạt cà phê được lựa chọn cẩn thận ngay từ lúc đang ngâm mình trong sương</p>
+
+                                </div>
+                            </li>
+                            <li class="adv__items">
+                                <span class="adv__icon">
+                                    <i class="  fas fa-seedling"></i>
+                                </span>
+                                <div class="adv__items--content">
+                                    <h3 class="adv__items-heading">
+                                        Sản phẩm tự nhiên
+                                    </h3>
+                                    <p>Cam kết chỉ cung cấp cà phê có nguồn gốc được kiểm soát chất lượng chặt</p>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="footer">
+            <span class="footer__text">© Bản quyền thuộc về coffee shop</span>
+        </div>
+
+    </div>
+
+
+    <script src="./asstes/scrip/main.js"></script>
+</body>
+</html>
