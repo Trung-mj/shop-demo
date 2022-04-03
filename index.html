@@ -44,8 +44,8 @@
                         <li class="navbar-items">
                             Tài khoản
                             <ul class="navbar-items__user">
-                                <li class="user__log-in">Đăng nhập</li>
-                                <li class="user__log-in">Đăng ký</li>
+                                <li class="user__log-in  js-login">Đăng nhập</li>
+                                <li class="user__log-in  js-signUp">Đăng ký</li>
                             </ul>
                         </li>
                         <span class="navbar-list__icon">
@@ -116,9 +116,9 @@
         </div>
 
         <div class="slider">
-            <div class="mySlides" style="background-image: url(/asstes/slider/slider_img1.jpg)"></div>
-            <div class="mySlides" style="background-image: url(/asstes/slider/slider_img2.jpg)"></div>
-            <div class="mySlides" style="background-image: url(/asstes/slider/slider_img3.jpg)"></div>
+            <div class="mySlides" style="background-image: url(../asstes/slider/slider_img1.jpg)"></div>
+            <div class="mySlides" style="background-image: url(../asstes/slider/slider_img2.jpg)"></div>
+            <div class="mySlides" style="background-image: url(../asstes/slider/slider_img3.jpg)"></div>
         </div>
 
         <div class="container">
@@ -128,10 +128,10 @@
                         <span class="container__category-logo">coffee shop</span>
                         <h3 class="container__category-heading">MENU HÔM NAY</h3>
                         <div class="container__category-list">
-                            <a href="" class="container__category-btn  selected">Cà phê</a>
-                            <a href="" class="container__category-btn">Bánh ngọt</a>
-                            <a href="" class="container__category-btn">Smoothies</a>
-                            <a href="" class="container__category-btn">Trà hoa quả</a>
+                            <button class="container__category-btn  selected">Cà phê</button>
+                            <button class="container__category-btn">Bánh ngọt</button>
+                            <button class="container__category-btn">Smoothies</button>
+                            <button class="container__category-btn">Trà hoa quả</button>
                         </div>
                     </div>
                    
@@ -261,6 +261,27 @@
                             
                         </div>
                     </ul>
+
+                    <!-- <ul class="container__product">
+                        <div class="row">
+                            <li class="container__items l-3">
+                               <div class="container__border">
+                                   <a href="" class="container__product-link">
+                                        <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                    </a>
+                                    <div class="container__add-cart">
+                                        Thêm vào giỏ hàng
+                                    </div>
+                               </div>
+                                <div class="container__product-content">
+                                    <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                    <span class="container__price">Giá:</span>
+                                    <span class="container__price-number">40.000đ </span>
+                                </div> 
+                            </li>
+                        </div>
+                    </ul> -->
+
                 </div>
                 
             </div>
@@ -318,6 +339,120 @@
         </div>
 
     </div>
+
+    <!--Modal layout-->
+    <div class="modal  js-modal">
+
+        <div class="modal__body  js-modal-container">
+            <!-- Register form -->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn  js-login">Đăng nhập</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với coffee Shop về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn  auth-form__control-back  btn--normal">TRỞ LẠI</button>
+                        <button class="btn  btn--primary">ĐĂNG KÝ</button>
+                    </div>
+
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook  btn  btn--with-icon  btn--size-s">
+                        <i class="auth-form__socials-icon  fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với FaceBook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google  btn  btn--with-icon  btn--size-s">
+                        <i class="auth-form__socials-icon  fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+             
+            
+        </div>
+    </div>
+
+    <!-- modal auth-form -->
+    <div class="modal2  js-modal2">
+        <div class="modal__body  js-modal-container2">
+            <!--Login form-->
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn  js-signUp">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                       
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help--link  auth-form__help--forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help--separate"></span>
+                            <a href="" class="auth-form__help--link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn  auth-form__control-back  btn--normal">TRỞ LẠI</button>
+                        <button class="btn  btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+    
+                </div>
+    
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook  btn  btn--with-icon  btn--size-s">
+                        <i class="auth-form__socials-icon  fab fa-facebook-square"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với FaceBook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google  btn  btn--with-icon  btn--size-s">
+                        <i class="auth-form__socials-icon  fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+            
 
 
     <script src="./asstes/scrip/main.js"></script>

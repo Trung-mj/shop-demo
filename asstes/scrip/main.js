@@ -12,3 +12,60 @@ var myIndex = 0;
           x[myIndex-1].style.display = "block";  
           setTimeout(carousel, 2000); // Change image every 2 seconds
         }
+
+/*Login*/
+const Btns = document.querySelectorAll('.js-login')
+        const modal2 = document.querySelector('.js-modal2')
+        const modalContainer2 = document.querySelector('.js-modal-container2') 
+
+        //hàm hiểm thị(thêm class open vào modal)
+        function showLogIn() {
+            modal2.classList.add('open2')
+        }
+
+        //hàm ẩn(gỡ bỏ class open vào modal)
+        function hideLogIn() {
+            modal2.classList.remove('open2')
+        }
+
+        //lặp qua từng thẻ button và nghe hành vi click
+        for (const Btn of Btns ) {
+            Btn .addEventListener('click', hideSignUp)
+            Btn .addEventListener('click', showLogIn)
+        }
+
+        //nghe hành vi click vào nút button close
+        // modalClose .addEventListener('click', hideBuyTickets)
+        modal2 .addEventListener('click', hideLogIn)
+        modalContainer2 .addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+
+
+// sign up 
+const buyBtns = document.querySelectorAll('.js-signUp')
+        const modal = document.querySelector('.js-modal')
+        const modalContainer = document.querySelector('.js-modal-container') 
+
+        //hàm hiểm thị(thêm class open vào modal)
+        function showSignUp() {
+            modal.classList.add('open')
+        }
+
+        //hàm ẩn(gỡ bỏ class open vào modal)
+        function hideSignUp() {
+            modal.classList.remove('open')
+        }
+
+        //lặp qua từng thẻ button và nghe hành vi click
+        for (const buyBtn of buyBtns ) {
+          buyBtn .addEventListener('click', hideLogIn)
+            buyBtn .addEventListener('click', showSignUp)
+        }
+
+        //nghe hành vi click vào nút button close
+        modal .addEventListener('click', hideSignUp)
+        modalContainer .addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+
