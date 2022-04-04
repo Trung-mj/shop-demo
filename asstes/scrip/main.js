@@ -16,6 +16,7 @@ var myIndex = 0;
 /*Login*/
 const Btns = document.querySelectorAll('.js-login')
         const modal2 = document.querySelector('.js-modal2')
+        const modal2Close = document.querySelector('.js-modal2-close')
         const modalContainer2 = document.querySelector('.js-modal-container2') 
 
         //hàm hiểm thị(thêm class open vào modal)
@@ -35,7 +36,7 @@ const Btns = document.querySelectorAll('.js-login')
         }
 
         //nghe hành vi click vào nút button close
-        // modalClose .addEventListener('click', hideBuyTickets)
+        modal2Close .addEventListener('click', hideLogIn)
         modal2 .addEventListener('click', hideLogIn)
         modalContainer2 .addEventListener('click', function(event) {
             event.stopPropagation()
@@ -45,6 +46,7 @@ const Btns = document.querySelectorAll('.js-login')
 // sign up 
 const buyBtns = document.querySelectorAll('.js-signUp')
         const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
         const modalContainer = document.querySelector('.js-modal-container') 
 
         //hàm hiểm thị(thêm class open vào modal)
@@ -63,7 +65,7 @@ const buyBtns = document.querySelectorAll('.js-signUp')
             buyBtn .addEventListener('click', showSignUp)
         }
 
-        //nghe hành vi click vào nút button close
+        modalClose .addEventListener('click', hideSignUp)
         modal .addEventListener('click', hideSignUp)
         modalContainer .addEventListener('click', function(event) {
             event.stopPropagation()
