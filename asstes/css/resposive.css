@@ -31,6 +31,10 @@
         line-height: 48px;
     }
 
+    .container__adv{
+        background-position: left;
+    }
+
 }
 
 /* tablet */
