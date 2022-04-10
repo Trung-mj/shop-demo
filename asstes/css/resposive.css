@@ -59,4 +59,11 @@
         line-height: 30px;
     }
 
+    .container__category-list {
+        padding-top: 42px;
+        display: flex;
+        float: left;
+        overflow-x: auto;
+        margin-bottom: 30px;
+    }
 }
