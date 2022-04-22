@@ -35,6 +35,11 @@
         background-position: left;
     }
 
+    .container__border:hover .container__add-cart {
+        display: none;
+
+    }
+
 }
 
 /* tablet */
