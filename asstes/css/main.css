@@ -14,6 +14,9 @@
     overflow: hidden;
 }
 
+.none {
+    display: none;
+}
 
 
 .header{
@@ -328,6 +331,11 @@
     transform: none;
 } 
 
+.modal .transform_none {
+    transform: none;
+}
+
+
 .header__menu-checkbox:checked ~ .nav__overlay {
     display: block;
 }
@@ -357,11 +365,15 @@
 
 .nav__mobile-product-list {
     padding-left: 44px;
+    /* display: none; */
 }
 
+
 .nav__plus-icon {
-    float: right;
     font-size: 10px;
+    padding: 0 20px;
+    position: absolute;
+    right: 6px;
 }
 
 .nav__mobile-product-item {
@@ -426,9 +438,6 @@
     float: left;
 }
 
-.nav__mobile-icon:hover .nav__mobile-menu {
-    transform: none;
-}
 
 .nav__mobile-search {
     width: 540px;
@@ -751,6 +760,7 @@
 .modal2.open2{
     display: flex;
 }
+
 
 .modal__body{
     --growth-from: 0.7;

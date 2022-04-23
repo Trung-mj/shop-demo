@@ -13,7 +13,7 @@ var myIndex = 0;
           setTimeout(carousel, 2000); // Change image every 2 seconds
         }
 
-/*Login*/
+/*Login*/ 
 const Btns = document.querySelectorAll('.js-login')
         const modal2 = document.querySelector('.js-modal2')
         const modal2Close = document.querySelector('.js-modal2-close')

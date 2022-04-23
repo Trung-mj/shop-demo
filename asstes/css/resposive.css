@@ -24,6 +24,7 @@
     .none {
         display: none;
     }
+    
 
     .container__category-btn {
         width: 130px;
@@ -95,5 +96,26 @@
 
     .container__product {
         margin-top: 30px;
+    }
+
+    .adv__consider {
+        width: 100%;
+        text-align: center;
+        padding-top: 106px;
+        color: #8f8f8f;
+    }
+    .container__adv {
+        height: 740px;
+    }
+    .adv__heading {
+        font-size: 2.4rem;
+    }
+    .adv__icon {
+        font-size: 2.6rem;
+        position: absolute;
+        left: 40px;
+    }
+    .adv__items-heading {
+        font-size: 2.2rem;
     }
 }
