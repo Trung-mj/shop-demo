@@ -655,7 +655,7 @@
 
 .container__product{
     margin-top: 50px;
-    /* display: none; */
+    display: none;
 
 }
 
@@ -680,12 +680,10 @@
 }
 
 .container__add-cart{
-    font-size: 2rem;
     line-height: 40px;
     font-weight: 400;
     height: 40px;
     background-color: var(--primary-color);
-    color: #fff;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -693,6 +691,13 @@
     animation: riseIn linear 0.2s;
     cursor: pointer;
 }
+
+.container__add-cart-link {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+}
+
 @keyframes riseIn{
     from {
         opacity: 0;

@@ -90,10 +90,10 @@ tabs.forEach((tab, index) => {
 
   tab.onclick = function () {
     $(".container__category-btn.selected").classList.remove("selected");
+    $(".container__product.selected").classList.remove("selected");
+    
     
     this.classList.add("selected");
-
-    $(".container__product.selected").classList.remove("selected");
     pane.classList.add("selected");
   };
 });
