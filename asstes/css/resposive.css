@@ -101,21 +101,29 @@
     .adv__consider {
         width: 100%;
         text-align: center;
-        padding-top: 106px;
+        padding: 60px 24px 40px 24px;
         color: #8f8f8f;
     }
     .container__adv {
-        height: 740px;
+        height: 540px;
     }
     .adv__heading {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
     .adv__icon {
-        font-size: 2.6rem;
+        font-size: 1.8rem;
         position: absolute;
-        left: 40px;
+        left: 74px;
+        margin: -2px 0;
     }
     .adv__items-heading {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+    }
+    .adv__consider > p,
+    .adv__items--content > p {
+        font-size: 1.4rem;
+    }
+    .adv__items {
+        padding: 40px 20px 0px;
     }
 }

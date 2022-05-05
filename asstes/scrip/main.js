@@ -71,3 +71,30 @@ const buyBtns = document.querySelectorAll('.js-signUp')
             event.stopPropagation()
         })
 
+        
+
+//product list
+
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+const tabs = $$(".container__category-btn");
+const panes = $$(".container__product");
+
+const tabActive = $(".container__category-btn.selected");
+const line = $("container__category-list .line");
+
+
+tabs.forEach((tab, index) => {
+  const pane = panes[index];
+
+  tab.onclick = function () {
+    $(".container__category-btn.selected").classList.remove("selected");
+    
+    this.classList.add("selected");
+
+    $(".container__product.selected").classList.remove("selected");
+    pane.classList.add("selected");
+  };
+});
+

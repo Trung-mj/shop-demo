@@ -96,24 +96,25 @@
                         </li>
                         <li class="nav__mobile-menu-item">
                             Sản phẩm
-                            <span class="nav__plus-icon">
+                            <label for="plus-checkbox" class="nav__plus-icon">
                                 <i class="fas fa-plus"></i>
-                            </span>
+                            </label>
+                            <input type="checkbox" hidden id="plus-checkbox" class="plus_mobile-checkbox">
+                            <ul class="nav__mobile-product-list">
+                                <li class="nav__mobile-product-item">
+                                    <a href="" class="nav__mobile-product-item-link">Cà phê</a> 
+                                </li>
+                                <li class="nav__mobile-product-item">
+                                    <a href="" class="nav__mobile-product-item-link">Bánh ngọt</a> 
+                                </li>
+                                <li class="nav__mobile-product-item">
+                                    <a href="" class="nav__mobile-product-item-link">Smoothies</a> 
+                                </li>
+                                <li class="nav__mobile-product-item">
+                                    <a href="" class="nav__mobile-product-item-link">Trà hoa quả</a> 
+                                </li>
+                            </ul>
                         </li>
-                        <ul class="nav__mobile-product-list">
-                            <li class="nav__mobile-product-item">
-                                <a href="" class="nav__mobile-product-item-link">Cà phê</a> 
-                            </li>
-                            <li class="nav__mobile-product-item">
-                                <a href="" class="nav__mobile-product-item-link">Bánh ngọt</a> 
-                            </li>
-                            <li class="nav__mobile-product-item">
-                                <a href="" class="nav__mobile-product-item-link">Smoothies</a> 
-                            </li>
-                            <li class="nav__mobile-product-item">
-                                <a href="" class="nav__mobile-product-item-link">Trà hoa quả</a> 
-                            </li>
-                        </ul>
                         <li class="nav__mobile-menu-item">
                             Tin tức
                         </li>
@@ -209,133 +210,263 @@
                         </div>
 
                     </div>
-                   
-                    <ul class="container__product">
-                        <div class="row">
-                            <li class="container__items l-3 m-6 c-12">
-                               <div class="container__border">
-                                   <a href="" class="container__product-link">
-                                        <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                    </a>
-                                    <div class="container__add-cart">
-                                        Thêm vào giỏ hàng
+                    <div class="container__product-parent">
+                        <ul class="container__product">
+                            <div class="row">
+                                <li class="container__items l-3 m-6 c-12">
+                                   <div class="container__border">
+                                       <a href="" class="container__product-link">
+                                            <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                        </a>
+                                        <div class="container__add-cart">
+                                            Thêm vào giỏ hàng
+                                        </div>
+                                   </div>
+                                    <div class="container__product-content">
+                                        <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                        <span class="container__price">Giá:</span>
+                                        <span class="container__price-number">40.000đ </span>
+                                    </div> 
+                                </li>
+                                <li class="container__items l-3 m-6 c-12 ">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
                                     </div>
-                               </div>
-                                <div class="container__product-content">
-                                    <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                    <span class="container__price">Giá:</span>
-                                    <span class="container__price-number">40.000đ </span>
-                                </div> 
-                            </li>
-                            <li class="container__items l-3 m-6 c-12 ">
-                                <div class="container__border">
-                                    <a href="" class="container__product-link">
-                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                     </a>
-                                     <div class="container__add-cart">
-                                         Thêm vào giỏ hàng
-                                     </div>
-                                </div>
-                                 <div class="container__product-content">
-                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                     <span class="container__price">Giá:</span>
-                                     <span class="container__price-number">40.000đ </span>
-                                 </div> 
-                             </li>
-                             <li class="container__items l-3 m-6 c-12">
-                                <div class="container__border">
-                                    <a href="" class="container__product-link">
-                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                     </a>
-                                     <div class="container__add-cart">
-                                         Thêm vào giỏ hàng
-                                     </div>
-                                </div>
-                                 <div class="container__product-content">
-                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                     <span class="container__price">Giá:</span>
-                                     <span class="container__price-number">40.000đ </span>
-                                 </div> 
-                             </li>
-                             <li class="container__items l-3 m-6 c-12">
-                                <div class="container__border">
-                                    <a href="" class="container__product-link">
-                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                     </a>
-                                     <div class="container__add-cart">
-                                         Thêm vào giỏ hàng
-                                     </div>
-                                </div>
-                                 <div class="container__product-content">
-                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                     <span class="container__price">Giá:</span>
-                                     <span class="container__price-number">40.000đ </span>
-                                 </div> 
-                             </li>
-                             <li class="container__items l-3 m-6 c-12">
-                                <div class="container__border">
-                                    <a href="" class="container__product-link">
-                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                     </a>
-                                     <div class="container__add-cart">
-                                         Thêm vào giỏ hàng
-                                     </div>
-                                </div>
-                                 <div class="container__product-content">
-                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                     <span class="container__price">Giá:</span>
-                                     <span class="container__price-number">40.000đ </span>
-                                 </div> 
-                             </li>
-                             <li class="container__items l-3 m-6 c-12">
-                                <div class="container__border">
-                                    <a href="" class="container__product-link">
-                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                     </a>
-                                     <div class="container__add-cart">
-                                         Thêm vào giỏ hàng
-                                     </div>
-                                </div>
-                                 <div class="container__product-content">
-                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                     <span class="container__price">Giá:</span>
-                                     <span class="container__price-number">40.000đ </span>
-                                 </div> 
-                             </li>
-                             <li class="container__items l-3 m-6 c-12">
-                                <div class="container__border">
-                                    <a href="" class="container__product-link">
-                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                     </a>
-                                     <div class="container__add-cart">
-                                         Thêm vào giỏ hàng
-                                     </div>
-                                </div>
-                                 <div class="container__product-content">
-                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                     <span class="container__price">Giá:</span>
-                                     <span class="container__price-number">40.000đ </span>
-                                 </div> 
-                             </li>
-                             <li class="container__items l-3 m-6 c-12">
-                                <div class="container__border">
-                                    <a href="" class="container__product-link">
-                                         <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
-                                     </a>
-                                     <div class="container__add-cart">
-                                         Thêm vào giỏ hàng
-                                     </div>
-                                </div>
-                                 <div class="container__product-content">
-                                     <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
-                                     <span class="container__price">Giá:</span>
-                                     <span class="container__price-number">40.000đ </span>
-                                 </div> 
-                             </li>
-                           
-                            
-                        </div>
-                    </ul>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cafe.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                               
+                                
+                            </div>
+                        </ul>
+
+                        <!-- <ul class="container__product">
+                            <div class="row">
+                                <li class="container__items l-3 m-6 c-12">
+                                   <div class="container__border">
+                                       <a href="" class="container__product-link">
+                                            <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                        </a>
+                                        <div class="container__add-cart">
+                                            Thêm vào giỏ hàng
+                                        </div>
+                                   </div>
+                                    <div class="container__product-content">
+                                        <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                        <span class="container__price">Giá:</span>
+                                        <span class="container__price-number">40.000đ </span>
+                                    </div> 
+                                </li>
+
+                                <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+                                 <li class="container__items l-3 m-6 c-12">
+                                    <div class="container__border">
+                                        <a href="" class="container__product-link">
+                                             <img class="container__img-pr"  src="./asstes/img/img_product/product_cake.jpg" alt="Cafe">
+                                         </a>
+                                         <div class="container__add-cart">
+                                             Thêm vào giỏ hàng
+                                         </div>
+                                    </div>
+                                     <div class="container__product-content">
+                                         <h3 class="container__product-name">CÀ PHÊ ĐEN ĐÁ</h3>
+                                         <span class="container__price">Giá:</span>
+                                         <span class="container__price-number">40.000đ </span>
+                                     </div> 
+                                 </li>
+
+                            </div>
+                        </ul> -->
+
+                    </div>
+                   
 
                     <!-- <ul class="container__product">
                         <div class="row">
