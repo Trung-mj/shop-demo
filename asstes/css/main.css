@@ -671,6 +671,14 @@
     transition: transform ease-in-out 0.2s;
 }
 
+.img__cake {
+    width: 290px;
+}
+
+.img__fruit-tea {
+    width: 168px;
+}
+
 .container__img-pr:hover{
     transform: scale(1.04);
 

@@ -126,4 +126,13 @@
     .adv__items {
         padding: 40px 20px 0px;
     }
+
+    .auth-form {
+        width: 360px;
+    }
+
+    .auth-form__socials-title {
+        margin: 0;
+        padding-left: 4px;
+    }
 }
